@@ -73,3 +73,33 @@ yarn-error.log
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# VS Code
+.vscode/
+
+# Android
+android/app/build/
+android/build/
+
+# iOS
+ios/build/
+
+# Expo
+.expo/
+.expo-shared/
+
+# Logs
+*.log
+
+# Windows
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
