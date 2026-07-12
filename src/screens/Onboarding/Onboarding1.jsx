@@ -3,7 +3,7 @@ import { View, Text, Pressable } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Octicons from '@react-native-vector-icons/octicons';
 
-const Onboarding1 = () => {
+const Onboarding1 = ({navigation}) => {
   return (
     <SafeAreaView className="flex-1">
       <View className="flex-1  justify-center gap-5 items-center">
@@ -18,12 +18,12 @@ const Onboarding1 = () => {
           guitar, code, pottery, anything.
         </Text>
        
-        <Pressable className="px-20 w-[85%] py-4  bg-orange-500 rounded-2xl">
+        <Pressable onPress={()=>navigation.navigate('ChooseSkills')} className="px-20 w-[85%] py-4  bg-orange-500 rounded-2xl">
           <Text className="text-white text-center text-xl font-semibold">
             Get Started
           </Text>
         </Pressable>
-        <Text className="text-xl font-semibold">I already have an account</Text>
+        <Pressable onPress={()=>navigation.navigate('Login')}><Text className="text-xl font-semibold">I already have an account</Text></Pressable>
       </View>
     </SafeAreaView>
   );

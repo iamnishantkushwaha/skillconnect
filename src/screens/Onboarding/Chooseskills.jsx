@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { View, Text, Pressable } from 'react-native';
-const Chooseskills = () => {
+const Chooseskills = ({navigation}) => {
   let skills = [
     'Web Development',
     'App Development',
@@ -62,7 +62,7 @@ const Chooseskills = () => {
           <Text className="text-md font-semibold">
             {selected.length} selected
           </Text>
-          <Pressable className=" w-[85%] py-4  bg-orange-500 rounded-2xl">
+          <Pressable onPress={()=>navigation.navigate('FindYourCircle')} className=" w-[85%] py-4  bg-orange-500 rounded-2xl">
             <Text className="text-white text-center text-xl font-semibold">
               Continue
             </Text>

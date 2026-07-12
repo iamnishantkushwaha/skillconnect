@@ -1,7 +1,7 @@
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { View, Text, TextInput, Pressable } from 'react-native';
-const Login = () => {
+const Login = ({navigation}) => {
   return (
    <SafeAreaView className="flex-1">
       
@@ -44,7 +44,7 @@ const Login = () => {
              Sign in with Google
             </Text>
           </Pressable>
-         <View className='flex-row justify-center'><Text>New here? </Text><Text className='text-orange-500'>Create account</Text></View> 
+         <View className='flex-row justify-center'><Text className='font-medium'>New here? </Text><Text onPress={()=>navigation.navigate('Signup')}className=' font-medium text-orange-500 '>Create account</Text></View> 
           </View>
         </View>
           

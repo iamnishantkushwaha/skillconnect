@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tasklist //FI \"PID eq 23736\")",
+      "Bash(tasklist //FI \"PID eq 20476\")"
+    ]
+  }
+}
