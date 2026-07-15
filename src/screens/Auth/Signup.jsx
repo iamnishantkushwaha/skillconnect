@@ -35,7 +35,7 @@ const Signup = ({navigation}) => {
             /></View>
              
               <Text className='font-medium text-gray-400 '>By continuing, you agree to SkillCircle's Terms and Privacy Policy.</Text>
-             <Pressable  onPress={()=>navigation.navigate('Home')} className=" w-full py-4  bg-orange-500 rounded-2xl">
+             <Pressable  onPress={()=>navigation.navigate('bottomtabs')} className=" w-full py-4  bg-orange-500 rounded-2xl">
             <Text className="text-white text-center text-xl font-semibold">
              Create Account
             </Text>

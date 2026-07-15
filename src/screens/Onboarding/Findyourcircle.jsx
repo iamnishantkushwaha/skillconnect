@@ -16,7 +16,7 @@ const Findyourcircle = ({navigation}) => {
             </Text>
           </View>
           <View className="relative">
-            {' '}
+            
             <TextInput
               className="border px-3 text-black rounded-2xl border-gray-400 flex-row justify-between"
               placeholder="Enter Location"

@@ -7,7 +7,7 @@ import { Bell } from 'lucide-react-native';
 import { Search } from 'lucide-react-native';
 import { UserRound } from 'lucide-react-native';
 
-const Home = () => {
+const Home = ({navigation}) => {
   
   const filters = ['For you', 'Nearby', 'Following', 'Live Now'];
   const [selectedfilters,setselectedfilters]=useState([])
@@ -114,7 +114,7 @@ const Home = () => {
         </View>
         </View>} 
         renderItem={({item:post})=>(
-        <View className='flex-column px-6 mt-3 pb-3 gap-5'>
+        <Pressable onPress={()=>navigation.navigate('PostDetails',{post:post})} className='flex-column px-6 mt-3 pb-3 gap-5'>
          
             <View className='bg-white p-4 gap-2 rounded-2xl '>
               <View className="flex-row items-center justify-between">
@@ -180,7 +180,7 @@ const Home = () => {
               </View>
             </View>
         
-        </View>
+        </Pressable>
       )}/>
     </SafeAreaView>
   );
